@@ -22,7 +22,6 @@
 		while (!output.empty())
 		{
 			/*需要输出拆分的式子时：cout << output.front() << endl;*/
-			cout << output.front();
 			output.pop();
 		}
 

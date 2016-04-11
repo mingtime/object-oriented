@@ -29,7 +29,7 @@
 			str = que.front();
 			que.pop();
 
-			if (str == "(")//   " "和 ' '的区别 wocao//
+			if (str == "(")
 			{
 				stack_symbol.push(str);
 			}
@@ -41,7 +41,7 @@
 					stack_equation.push(stack_symbol.top());
 					stack_symbol.pop();
 				}
-				if (!stack_symbol.empty())   //**//
+				if (!stack_symbol.empty())   
 				{
 					stack_symbol.pop();
 				}
@@ -96,8 +96,7 @@
 
 		while (!stack_equation.empty())
 		{
-			stack_symbol.push(stack_equation.top());//有关！empty 这个条件 是最强烈的 整整调试了两天！！！！！！打好基础真的很重要  细微之处的过失有时真的能要人命 
-													//特地去百度了一下这一点
+			stack_symbol.push(stack_equation.top());//有关!.empty() 这个条件 是最强烈的 
 			/* 为了验证改为后缀表达式是否错误：cout << stack_equation.top() << endl;  */
 			stack_equation.pop();
 		}
