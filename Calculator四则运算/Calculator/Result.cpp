@@ -34,7 +34,7 @@
 			{
 				results = number.top();
 				number.pop();
-				if (number.empty())
+				if (number.empty())   //若提取加数后num栈为空
 				{
 					number.push(0);
 					results = number.top() + results;
@@ -51,7 +51,7 @@
 			{
 				results = number.top();
 				number.pop();
-				if (number.empty())
+				if (number.empty())   //若提取被减数后number栈为空
 				{
 					number.push(0);
 					results = number.top() - results;
@@ -84,7 +84,7 @@
 
 			else
 			{
-				stringstream string(str);
+				stringstream string(str);  //将string型的str转为double型的i
 				string >> i;
 				number.push(i);
 			}

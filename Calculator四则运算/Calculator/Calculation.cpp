@@ -87,7 +87,7 @@
 
 		while (!stack_symbol.empty())
 		{
-			if (stack_symbol.top() != ")")
+			if (stack_symbol.top() != "(")
 			{
 				stack_equation.push(stack_symbol.top());
 			}
