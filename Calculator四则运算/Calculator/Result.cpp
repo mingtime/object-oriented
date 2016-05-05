@@ -77,6 +77,13 @@
 			{
 				results = number.top();
 				number.pop();
+
+				if (results == 0)    //³ıÊıÎªÁãÅĞ¶Ï 4.14ĞŞ¸Ä
+				{
+					cout << "WRONG EXPERSSION" << endl;
+					return 0;
+				}
+
 				results = number.top() / results;
 				number.pop();
 				number.push(results);

@@ -81,10 +81,22 @@
 			{
 				digit = que.front();
 				que.pop();
-				digit2 = que.front();
-				digit += digit2;
-				que.pop();
-				experssion.push(digit);
+
+				if (que.front() == "(")
+				{
+					experssion.push(digit);
+					experssion.push(que.front());
+					que.pop();
+				}
+
+				else
+				{
+					digit2 = que.front();
+					digit += digit2;
+					que.pop();
+					experssion.push(digit);
+				}
+
 			}
 
 			//连接带正号正数的正号
