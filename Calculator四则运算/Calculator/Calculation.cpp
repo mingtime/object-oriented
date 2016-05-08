@@ -1,4 +1,16 @@
-	#include "Calculation.h"
+	/*******************************************************************
+	FileName: result.cpp
+	Author:mingtime         Date: 16/04/08    version:1.0
+	Description:  ScanStringExperssion();
+	Function List:  1.Trans infix expr into suffix
+								2.Use two <stack> to realize 1
+	1. -------    History:
+	<author>  <time>   <version >   <desc>
+	mingtime    16/04/08     1.0     build this moudle
+
+	********************************************************************/
+    #include "Result.h"
+    #include "Calculation.h"
 	#include<stdio.h>
 	#include<string>
 	#include<stdlib.h>

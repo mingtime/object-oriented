@@ -13,6 +13,13 @@
 		~Printf();
 
 		void OutStringQueue(queue<string> output);
+
+		/*ÐÞ¸Ä*/
+		void ShowError();
+
+		void ExperssionOutput(string s);
+
+		void PrintfResult(double result);
 	};
 
 	#endif

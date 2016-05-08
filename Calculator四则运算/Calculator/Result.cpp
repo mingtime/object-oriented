@@ -1,4 +1,19 @@
-	#include "Result.h"
+	/*******************************************************************
+	FileName: result.cpp
+	Author:mingtime         Date: 16/04/08    version:3.0
+	Description:  CalculationResult();
+	Function List:
+								1.Calculate the <stack>
+								2.(string)str-->(double)i
+								3.Judge if the divisor is 0 or not
+	1. -------    History:
+	<author>  <time>   <version >   <desc>
+	mingtime    16/04/08     1.0     build this moudle
+	mingtime    16/04/14     2.0     add divisoriszero warning 
+	mingtime    16/05/06     3.0     delete output functions
+	********************************************************************/
+    #include "Result.h"
+    #include "Printf.h"
 	#include<stdio.h>
 	#include<string>
 	#include<stdlib.h>
@@ -22,6 +37,7 @@
 	double Result::CalculationResult(stack<string>experssion)
 	{
 		stack<double>number;
+		Printf printf;
 		string str;
 		double i, results;
 
@@ -80,7 +96,8 @@
 
 				if (results == 0)    //³ýÊýÎªÁãÅÐ¶Ï 4.14ÐÞ¸Ä
 				{
-					cout << "WRONG EXPERSSION" << endl;
+					printf.ShowError();
+					//cout << "WRONG EXPERSSION" << endl;
 					return 0;
 				}
 
